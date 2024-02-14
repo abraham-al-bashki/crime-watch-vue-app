@@ -1,6 +1,6 @@
 <template>
   <h1>Users List page</h1>
-  <template v-if="users !== undefined">
+  <template v-if="users !== null">
     <p v-for="user in users" :key="user.id">
       <router-link
         :to="{
@@ -23,6 +23,6 @@ const users = ref([
   { id: 2, name: "Kalle" },
   { id: 3, name: "Anki" },
   { id: 4, name: "Rik" },
-  { id: 5, name: "Ardo" },
+  { id: 4, name: "Ardo" },
 ]);
 </script>
